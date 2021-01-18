@@ -1,0 +1,29 @@
+h1{
+    font-size: large;
+    text-align: center;
+}
+
+/* Specifies the size of the audio container */
+audio {
+    width: 115px;
+    height: 25px;
+  }
+  
+  audio::media-controls-panel {
+    justify-content: center;
+    height: 25px;
+  }
+  
+  /* Removes the timeline */
+  audio::media-controls-timeline {
+    display: none !important;
+  }
+  
+  /* Removes the time stamp */
+  audio::media-controls-current-time-display {
+    display: none;
+  }
+  
+  audio::media-controls-time-remaining-display {
+    display: none;
+  }
