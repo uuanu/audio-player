@@ -10,19 +10,39 @@
 
 <body>
 
-    <h1 id="heading">Music player</h1>
+    <div id="parent-container">
 
-    <audio id="myAudio" controls aria-setsize="width">
-        <source src="horse.ogg" type="audio/ogg">
-        <source src="horse.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-      
-    
-    
-    
 
-    <input type="file">
+        <div class="child-logo">
+                <img src="/audio-player/images/website-logo.jpg" alt="nothing here" height="100px" width="auto" >
+                the online-offline music player that work for you even after dissconnected from internet
+
+        </div>
+
+        <div id="add">
+
+            <input type="file" name="music" id="content">
+        </br>
+            <button type="submit" onclick="change-content()">Play</button>
+
+
+        </div>
+
+        <div id="chid-art">
+
+
+        </div>
+
+        <div id="player">
+            <audio src="" type="mp3">
+                
+            </audio>
+
+        </div>
+
+
+    </div>
+
 
 </body>
 </html>
