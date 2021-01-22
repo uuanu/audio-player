@@ -1,5 +1,5 @@
 
-
+console.log("asa");
 
 var x = document.getElementById("myAudio");
 
@@ -9,4 +9,9 @@ function playAudio() {
 
 function pauseAudio() {
   x.pause();
+}
+
+function klick()
+{
+  document.getElementById("content").click();
 }

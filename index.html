@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music player</title>
-    <script type="text/javascript" src="/js/music.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/home.css">
+    <script type="text/javascript" src="/audio-player/js/music.js"></script>
+    <link rel="stylesheet" type="text/css" href="/audio-player/css/home.css">
 </head>
 
 <body>
@@ -13,16 +14,18 @@
     <div id="parent-container">
 
 
-        <div class="child-logo">
-                <img src="/audio-player/images/website-logo.jpg" alt="nothing here" height="100px" width="auto" >
-                the online-offline music player that work for you even after dissconnected from internet
+        <div id="child-logo">
+            <img src="/audio-player/images/website-logo.jpg" alt="nothing here" height="100px" width="auto"><br>
+            the online-offline music player
+            <!--that work for you even after dissconnected from internet-->
 
         </div>
 
         <div id="add">
-
+            <img src="/audio-player/images/Plus.png" onclick="klick()">
+            <br>
             <input type="file" name="music" id="content">
-        </br>
+            </br>
             <button type="submit" onclick="change-content()">Play</button>
 
 
@@ -35,7 +38,7 @@
 
         <div id="player">
             <audio src="" type="mp3">
-                
+
             </audio>
 
         </div>
@@ -45,4 +48,5 @@
 
 
 </body>
+
 </html>

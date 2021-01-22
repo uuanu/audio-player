@@ -1,13 +1,18 @@
-.child-logo
-{
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
+#parent-container {
+ 
 }
 
-img{
-  align-content: center;
+#child-logo {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  font-size: larger;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+#add{
+  margin: auto;
+  text-align: center;
 }
 
 /* Specifies the size of the audio container */
