@@ -24,7 +24,7 @@
         <div id="add">
             <img src="/audio-player/images/Plus.png" onclick="klick()">
             <br>
-            <input type="file" name="music" id="content">
+            <input type="file" name="music" id="content" accept="audio/*">
             </br>
             <button type="submit" onclick="change-content()">Play</button>
 
@@ -36,8 +36,8 @@
 
         </div>
 
-        <div id="player">
-            <audio src="" type="mp3">
+        <div id="child-player">
+            <audio src="" type="mp3" id="player">
 
             </audio>
 
