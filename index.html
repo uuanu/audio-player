@@ -22,11 +22,11 @@
         </div>
 
         <div id="add">
-            <img src="/audio-player/images/Plus.png" onclick="klick()">
+            <img src="/audio-player/images/Plus.png" onclick="on_imgclick()">
             <br>
             <input type="file" name="music" id="content" accept="audio/*">
             </br>
-            <button type="submit" onclick="change-content()">Play</button>
+            <button type="submit" onclick="on_submit()">Play</button>
 
 
         </div>
@@ -37,8 +37,8 @@
         </div>
 
         <div id="child-player">
-            <audio src="" type="mp3" id="player">
-
+            <audio controls>
+                <source src="" type="audio/mpeg" id="player">
             </audio>
 
         </div>
