@@ -1,3 +1,7 @@
+body{
+  background-color: #99CCFf;
+}
+
 
 #child-logo {
   margin: auto;
@@ -12,10 +16,6 @@
   text-align: center;
 }
 
-img{
-  
-  resize: inherit;
-}
 
 /* Specifies the size of the audio container */
 audio {

@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music player</title>
-    <script type="text/javascript" src="/audio-player/js/music.js"></script>
-    <link rel="stylesheet" type="text/css" href="/audio-player/css/home.css">
+    <script type="text/javascript" src="/js/music.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
 </head>
 
 <body>
@@ -15,16 +16,16 @@
 
 
         <div id="child-logo">
-            <img src="/audio-player/images/website-logo.jpg" alt="nothing here" height="100px" width="auto"><br>
+            <img src="/images/website-logo.jpg" alt="nothing here" height="100px" width="auto"><br>
             the online-offline music player
             <!--that work for you even after dissconnected from internet-->
 
         </div>
 
         <div id="add">
-            <img src="/audio-player/images/Plus.png" onclick="on_imgclick()">
+            <img src="/images/Plus.png" onclick="on_imgclick()" style="width: 30%; height: 60;">
             <br>
-            <input type="file" name="music" id="content" accept="audio/*">
+            <input type="file" name="music" id="content" accept="audio/*" onchange="loadFile(event)">
             </br>
             <button type="submit" onclick="on_submit()">Play</button>
 
@@ -37,9 +38,17 @@
         </div>
 
         <div id="child-player">
-            <audio controls>
-                <source src="" type="audio/mpeg" id="player">
-            </audio>
+           
+            <audio id="blah" controls>
+                <source src="horse.mp3" type="audio/mpeg" >
+                Your browser does not support the audio tag.
+              </audio>
+               <!--         <iframe
+            frameborder="0"
+            width="400"
+            height="200"
+            src="https://drive.google.com/file/d/1234xyz/preview">
+            </iframe>-->
 
         </div>
 
